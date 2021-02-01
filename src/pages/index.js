@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { StackItem, Stack, Section } from "@quarkly/components";
+import { StackItem, Stack, Override, Section } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -33,7 +33,7 @@ export default (() => {
 						color="--dark"
 						max-width="850px"
 					>
-						Мой налог
+						Мой сайт
 					</Text>
 				</StackItem>
 				<StackItem
@@ -69,6 +69,49 @@ export default (() => {
 					</Text>
 				</StackItem>
 			</Stack>
+			<Section>
+				<Override
+					slot="SectionContent"
+					display="contents"
+					padding="20px 20px 20px 20px"
+					position="static"
+					align-self="auto"
+				/>
+				<Image
+					width="410px"
+					height="600px"
+					src="https://images.unsplash.com/photo-1593642532781-03e79bf5bec2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
+					display="inline-grid"
+					padding="20px 20px 20px 20px"
+					order="1"
+					align-self="flex-start"
+				/>
+				<Text display="inline-grid" width="500px" order="2" align-self="flex-end">
+					<Strong>
+						Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference.{" "}
+					</Strong>
+					<br />
+					<br />
+					Or maybe you have a creative project to sha
+					<br />
+					<br />
+					re with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference.{" "}
+					<br />
+					Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference.{" "}
+					<br />
+					Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference. Or maybe you have a creative project to share with the world. Whatever 
+it is, the way you tell your story online can make all the difference.{" "}
+				</Text>
+			</Section>
 		</Section>
 		<Link
 			font={"--capture"}
